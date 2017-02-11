@@ -27,7 +27,7 @@ layout: default
               {% endfor %}
             </span>
           {% endif %}
-          <a target="_blank" href="{{ talk.videos | first }}"><img src="/images/link-new-tab.png" style="vertical-align: bottom"></a>
+          <a target="_blank" href="{{ talk.videos | first }}"><img src="{{ site.github.url }}/images/link-new-tab.png" style="vertical-align: bottom"></a>
         </h5>
         <div class="metadata">
           {% for person_id in talk.author_ids %}
