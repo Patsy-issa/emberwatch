@@ -17,8 +17,8 @@
     Ember.js {{ page.title }} on EmberWatch
   </title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
 
 </head>
 
@@ -65,10 +65,10 @@
 
   {% include footer.html %}
 
-  <script type="text/javascript" src="/javascripts/main.js"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
   {% if page.custom_js %}
     {% for js_file in page.custom_js %}
-    <script type="text/javascript" src="/javascripts/{{ js_file }}.js"></script>
+      <script type="text/javascript" src="javascripts/{{ js_file }}.js"></script>
     {% endfor %}
   {% endif %}
 </body>
