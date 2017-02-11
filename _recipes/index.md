@@ -13,11 +13,11 @@ Here are all of the available recipes:
 {% for section in site.data.cookbook-sections %}
 #### {{ section.name }}
 <ol>
-{% for recipe in site.data.cookbook-recipes %}
-{% if recipe.section_id == section.id %}
-<li><a href="/recipes/{{ section.section-path }}/{{ recipe.recipe-file }}.html">{{ recipe.name }}</a></li>
-{% endif %}
-{% endfor %}
+  {% for recipe in site.data.cookbook-recipes %}
+    {% if recipe.section_id == section.id %}
+      <li><a href="{{ site.github.url }}/recipes/{{ section.section-path }}/{{ recipe.recipe-file }}.html">{{ recipe.name }}</a></li>
+    {% endif %}
+  {% endfor %}
 </ol>
 {% endfor %}
 
